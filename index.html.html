@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — メルカリ利益メーター</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; background: #f8f9fa; color: #333; line-height: 1.8; }
+    .container { max-width: 720px; margin: 40px auto; padding: 40px; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    h1 { font-size: 24px; margin-bottom: 8px; color: #1a1a2e; }
+    h2 { font-size: 18px; margin: 28px 0 12px; color: #e74c5e; border-bottom: 2px solid #e74c5e; padding-bottom: 4px; }
+    p, li { font-size: 14px; margin-bottom: 12px; }
+    ul { padding-left: 24px; }
+    .date { color: #888; font-size: 13px; margin-bottom: 24px; }
+    .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>プライバシーポリシー</h1>
+    <p class="date">最終更新日: 2026年3月21日</p>
+    <p>メルカリ利益メーター（以下「本拡張機能」）は、ユーザーのプライバシーを最優先に設計されています。本ポリシーでは、本拡張機能におけるデータの取り扱いについて説明します。</p>
+
+    <h2>1. 収集するデータ</h2>
+    <p>本拡張機能は、<strong>個人情報を一切収集しません。</strong></p>
+    <ul>
+      <li>氏名、メールアドレス、住所等の個人識別情報は収集しません</li>
+      <li>閲覧履歴やアクセスログは収集しません</li>
+      <li>メルカリのアカウント情報にはアクセスしません</li>
+      <li>ユーザーの入力した仕入原価や梱包費の情報は、ユーザーのブラウザ内（chrome.storage.sync）にのみ保存され、外部サーバーには一切送信しません</li>
+    </ul>
+
+    <h2>2. データの保存</h2>
+    <p>本拡張機能は、以下のデータをユーザーのブラウザ内にのみ保存します：</p>
+    <ul>
+      <li>デフォルトの配送方法設定</li>
+      <li>デフォルトの梱包費</li>
+      <li>振込手数料の表示設定</li>
+      <li>パネルのサイズ設定</li>
+    </ul>
+    <p>これらはすべてユーザーの利便性向上のためであり、<code>chrome.storage.sync</code> APIを使用してユーザーのChromeアカウントに紐づく端末間で同期されます。外部サーバーへの通信は行いません。</p>
+
+    <h2>3. 外部通信</h2>
+    <p>本拡張機能は外部サーバーとの通信を<strong>一切行いません。</strong>すべての計算処理はユーザーのブラウザ内でローカルに実行されます。アナリティクスツール、広告SDK、トラッキングピクセル等は含まれていません。</p>
+
+    <h2>4. 第三者へのデータ共有</h2>
+    <p>本拡張機能はデータを収集しないため、第三者へのデータ共有、販売、提供は一切ありません。</p>
+
+    <h2>5. メルカリのページへのアクセス</h2>
+    <p>本拡張機能は <code>jp.mercari.com</code> の商品ページにアクセスし、以下の情報をページ上から読み取ります：</p>
+    <ul>
+      <li>商品の販売価格</li>
+      <li>配送方法の種類と送料</li>
+    </ul>
+    <p>これらの情報はリアルタイムの利益計算にのみ使用され、保存・記録・送信されることはありません。</p>
+
+    <h2>6. Google API の利用について</h2>
+    <p>本拡張機能が Google API から取得する情報の利用は、<a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank">Chrome Web Store User Data Policy</a>（Limited Use 要件を含む）に準拠します。</p>
+
+    <h2>7. 権限（パーミッション）の利用目的</h2>
+    <ul>
+      <li><strong>storage:</strong> ユーザーの設定（配送方法、梱包費等）をブラウザに保存するため</li>
+      <li><strong>activeTab:</strong> ユーザーが閲覧中のメルカリ商品ページの価格を読み取るため</li>
+      <li><strong>host_permissions (jp.mercari.com):</strong> メルカリ商品ページに利益計算パネルを表示するため</li>
+    </ul>
+
+    <h2>8. お子様のプライバシー</h2>
+    <p>本拡張機能は13歳未満のお子様を対象としておらず、意図的にお子様から個人情報を収集することはありません。</p>
+
+    <h2>9. ポリシーの変更</h2>
+    <p>本ポリシーは必要に応じて更新されることがあります。重要な変更がある場合は、拡張機能の更新を通じてお知らせします。</p>
+
+    <h2>10. お問い合わせ</h2>
+    <p>本拡張機能のプライバシーに関するご質問は、Chrome Web Store の拡張機能ページからお問い合わせください。</p>
+
+    <hr style="margin: 32px 0; border: none; border-top: 1px solid #eee;">
+
+    <h1 style="font-size: 20px;">Privacy Policy (English)</h1>
+    <p class="date">Last updated: March 21, 2026</p>
+    <p>Mercari Profit Meter ("the Extension") is designed with user privacy as our top priority.</p>
+    <p><strong>Data Collection:</strong> The Extension does not collect any personal information. No browsing history, account information, or personally identifiable information is collected, stored, or transmitted to external servers.</p>
+    <p><strong>Local Storage:</strong> User preferences (default shipping method, packaging cost, etc.) are stored locally in the user's browser using <code>chrome.storage.sync</code> and are never sent to external servers.</p>
+    <p><strong>No External Communication:</strong> The Extension performs all calculations locally within the browser. No analytics tools, advertising SDKs, or tracking pixels are included.</p>
+    <p><strong>Google API Compliance:</strong> The Extension's use of information received from Google APIs adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+    <p><strong>Contact:</strong> For privacy-related inquiries, please contact us through the Extension's Chrome Web Store page.</p>
+
+    <div class="footer">
+      <p>メルカリ利益メーター — Mercari Profit Meter</p>
+      <p>※本拡張機能はメルカリ公式とは関係のない非公式ツールです</p>
+    </div>
+  </div>
+</body>
+</html>
